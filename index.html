@@ -15,7 +15,7 @@
         height = 75px;
       }
       .intro_text {
-        font-size = 20px;
+        font-size = 18px;
         padding-left: 20px;
       }
     </style>
@@ -98,32 +98,29 @@ body {font-family: Arial;}
 </head>
 <body>
 
-<h2>Tabs</h2>
-<p>Click on the buttons inside the tabbed menu:</p>
-
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openT(event, 'Projects')">London</button>
+  <button class="tablinks" onclick="openT(event, 'Blog')">Paris</button>
+  <button class="tablinks" onclick="openT(event, 'Other')">Tokyo</button>
 </div>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="Projects" class="tabcontent">
+  <h3><b>Projects</b></h3>
+  <p>To be updated!</p>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+<div id="Blog" class="tabcontent">
+  <h3><b>Blog</b></h3>
+  <p>To be updated</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<div id="Other" class="tabcontent">
+  <h3><b>Other</b></h3>
+  <p>To be updated</p>
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function openT(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
