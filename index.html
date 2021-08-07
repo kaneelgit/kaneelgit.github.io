@@ -150,7 +150,6 @@ body {font-family: Arial;}
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
   padding: 6px 20px;
   border: 1px solid #ccc;
   border-top: none;
@@ -164,6 +163,7 @@ body {font-family: Arial;}
   <button class="tablinks" onclick="openT(event, 'Blog')">Blog</button>
   <button class="tablinks" onclick="openT(event, 'Other')">Other</button>
   <button class="tablinks" onclick="openT(event, 'Contact')">Contact</button> 
+  <button class="tablinks" onclick="openT(event, 'Models')">Simulations/Models </button>
 </div>
 
 <!-- Projects ------------------------------------------------------------------------------------------------------------->
@@ -185,21 +185,31 @@ body {font-family: Arial;}
   
 <!-- Blog ------------------------------------------------------------------------------------------------------------->
   
-<div id="Blog" class="tabcontent">
+<div id="Blog" class="tabcontent" style="display: none">
   <p> <b> Projects, Opinions & Articles </b> Click <a href = https://medium.com/@kaneel.senevirathne target = '_blank'> <b> here </b> </a> to visit my blog. </b></p>
   <p>To be updated!</p> 
 </div>
 
+<!-- Models ------------------------------------------------------------------------------------------------------------->
+ 
+<div id="Models" class="tabcontent" style="display: none">
+  <p><b>Simulations of cognitive models from papers.</b> Click <a href = "https://github.com/kaneelgit/Simulations-from-papers" target '_blank' here to go to the github repository </p>
+  
+
+
+
+
+
 <!-- Other ------------------------------------------------------------------------------------------------------------->
 
-<div id="Other" class="tabcontent">
+<div id="Other" class="tabcontent" style="display: none">
   <p><b>Other</b></p>
   <p>To be updated!</p>
 </div>
 
 <!-- contact ------------------------------------------------------------------------------------------------------------->
 
-<div id="Contact" class="tabcontent">
+<div id="Contact" class="tabcontent" style="display: none">
   <p><b>Contact details</b></p>
   <p>If you want to contact me, email me at <b>kaneel.senevirathne@gmail.com</b>. You can also connect with me using any of the social media handles above.</p>
   
