@@ -44,7 +44,7 @@
             Apart from AI and cognitive sciences, I enjoy reading & studying about financial markets, autonomous trading and value investing. During my free time, I like to workout, cycle and travel. 
             (I'd say out of the three I spent most of the time working out &#128513;) <br> <br>
             
-            If you like to check my CV/resume, click <a href = "resume.pdf" download> here </a> <br> <br>
+            If you like to check my CV/resume, click <a href = "resume.pdf" download> here. </a> If you like to vist my github account click <a href = "https://github.com/kaneelgit" target = "_blank"> here </a> <br> <br>
             
             Research Interests:  <br>
             Cognitive science, Deep Learning, Reinforcement Learning, Machine Learning, Cognitive Neuroscience, Multisensory Integration, Medical Image Processing </p>
@@ -127,6 +127,7 @@ body {font-family: Arial;}
 
 /* Style the buttons inside the tab */
 .tab button {
+  width: 15%;
   background-color: inherit;
   float: left;
   border: none;
@@ -149,9 +150,7 @@ body {font-family: Arial;}
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
   padding: 6px 20px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 </style>
@@ -161,8 +160,9 @@ body {font-family: Arial;}
 <div class="tab">
   <button class="tablinks" onclick="openT(event, 'Projects')">Projects</button>
   <button class="tablinks" onclick="openT(event, 'Blog')">Blog</button>
+  <button class="tablinks" onclick="openT(event, 'Models')">Simulations/Models </button>
   <button class="tablinks" onclick="openT(event, 'Other')">Other</button>
-  <button class="tablinks" onclick="openT(event, 'Contact')">Contact</button> 
+  <button class="tablinks" onclick="openT(event, 'Contact')">Contact</button>   
 </div>
 
 <!-- Projects ------------------------------------------------------------------------------------------------------------->
@@ -173,9 +173,10 @@ body {font-family: Arial;}
   
   <h3>Tic-tac-toe using Reinforcement Learning</h3>
   <div>
-  <img style = "vertical-align:middle" src = '/images/ttt.gif'>
-  <span style=""> Here we use Reinforcement Learning to teach an agent to play tic-tac-toe using past experience and self play. <br> 
-    Github <a href = "https://github.com/kaneelgit/Tick-Tack-Toe-RL" target = "_blank"> repository </a><br></span>
+  <img src = '/images/ttt.gif' align = "LEFT">
+    Here we use Reinforcement Learning (RL) to teach an agent to play tic-tac-toe. The RL agent is playing games with another RL agent and a random agent and learn to master
+    the game from past experience. The results show that the RL agent has a significant advantage over the random agent. Also when playing against another RL agent both agents learn to draw games
+    in order to maximize their rewards. <br> <br> Github <a href = "https://github.com/kaneelgit/Tick-Tack-Toe-RL" target = "_blank"> repository </a> <br> Blog article 
   </div>
   
   
@@ -184,24 +185,30 @@ body {font-family: Arial;}
   
 <!-- Blog ------------------------------------------------------------------------------------------------------------->
   
-<div id="Blog" class="tabcontent">
+<div id="Blog" class="tabcontent" style="display: none">
   <p> <b> Projects, Opinions & Articles </b> Click <a href = https://medium.com/@kaneel.senevirathne target = '_blank'> <b> here </b> </a> to visit my blog. </b></p>
   <p>To be updated!</p> 
 </div>
 
+<!-- Models ------------------------------------------------------------------------------------------------------------->
+ 
+<div id="Models" class="tabcontent" style="display: none">
+  <p><b>Simulations of cognitive models from papers.</b> Click <a href = "https://github.com/kaneelgit/Simulations-from-papers" target= '_blank'> here </a>to go to the github repository </p>
+</div>  
+
 <!-- Other ------------------------------------------------------------------------------------------------------------->
 
-<div id="Other" class="tabcontent">
+<div id="Other" class="tabcontent" style="display: none">
   <p><b>Other</b></p>
   <p>To be updated!</p>
 </div>
 
 <!-- contact ------------------------------------------------------------------------------------------------------------->
 
-<div id="Contact" class="tabcontent">
+<div id="Contact" class="tabcontent" style="display: none">
   <p><b>Contact details</b></p>
   <p>If you want to contact me, email me at <b>kaneel.senevirathne@gmail.com</b>. You can also connect with me using any of the social media handles above.</p>
-  
+</div> 
   
   
 <script>
